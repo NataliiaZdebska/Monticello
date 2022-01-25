@@ -1,0 +1,63 @@
+.banner {
+  width: 100%;
+  height: 100%;
+
+  &__item {
+    color: $clr-white;
+    height: 70vh;
+    position: relative;
+    align-items: center;
+
+    @media screen and (min-width: $desktop) {
+      height: 800px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  &__heading {
+    width: 100%;
+    margin: 0 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    z-index: 2;
+
+    @media screen and (min-width: $desktop) {
+      bottom: 40%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.header {
+  &__banner_01 {
+    background-color: rgba(126, 90, 255, 0.8);
+  }
+
+  &__banner_02 {
+    background-color: rgba(166, 68, 68, 0.7);
+  }
+
+  &__banner_03 {
+    background-color: #000b46;
+  }
+
+  &__banner_04 {
+    background-color: #463600;
+  }
+
+  &__banner_05 {
+    background-color: #245d2b;
+  }
+}
+
+

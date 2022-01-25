@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'icon';
+  src:  url('../fonts/icon-fonts/icon.eot?psj9wk');
+  src:  url('../fonts/icon-fonts/icon.eot?psj9wk#iefix') format('embedded-opentype'),
+    url('../fonts/icon-fonts/icon.ttf?psj9wk') format('truetype'),
+    url('../fonts/icon-fonts/icon.woff?psj9wk') format('woff'),
+    url('../fonts/icon-fonts/icon.svg?psj9wk#icon') format('svg');
+  font-weight: auto;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: auto;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-instagram:before {
+  content: "\e901";
+}
+.icon-map-marker:before {
+  content: "\e902";
+}
+.icon-phone:before {
+  content: "\e903";
+}
+.icon-twitter:before {
+  content: "\e904";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-drawer2:before {
+  content: "\e95d";
+}

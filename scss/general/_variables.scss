@@ -1,0 +1,28 @@
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+$font-hdr_navigation: 'Source Sans Pro', sans-serif;
+
+
+$fz-xLarge:    80px;
+$fz-h2:        44px;
+$fz-subtitle:  22px;
+$fz-reg:       18px;
+$fz-small:     15px;
+$fz-xSmall:    12px;
+
+$clr-black:        #000000;
+$clr-primary:      #2C4058;
+$clr-lightBlue:    #55B7FF;
+$clr-grey:         #4B5562;
+$clr-violet:       #7E5AFFFF;
+$clr-light:        #C4C4C4;
+$clr-white:        #ffffff;
+
+$mobile-min: 320px;
+$mobile-374max: 374px;
+$mobile-375: 375px;
+$tablet-min: 768px;
+$desktop:    1024px;
+$desktop-large: 1440px;
+$tablet-max: $desktop - 1px;
+$mobile-max: $tablet-min - 1px;
