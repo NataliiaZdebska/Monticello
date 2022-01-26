@@ -1,0 +1,113 @@
+.news {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-color: $clr-lightBlue;
+  color: $clr-white;
+
+  &__title {
+    @include titleBlock;
+    padding: 160px 0 90px;
+
+    &::before {
+      background-color: $clr-white;
+      top: 50%;
+    }
+  }
+
+  &__slider {
+    padding: 20px 0;
+    width: 78%;
+    margin: 0 auto;
+  }
+}
+
+.news__block {
+  background-color: $clr-white;
+  color: $clr-primary;
+  width: 370px;
+  height: 514px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+
+  &_img {
+    width: 100%;
+  }
+
+  &_title {
+    @include titleGeneral ($fz-small);
+    margin: 0 auto 15px;
+    display: block;
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: $fz-reg;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: $fz-subtitle;
+    }
+  }
+
+  &_text {
+    @include regularText;
+    overflow: hidden;
+  }
+}
+
+.article {
+  &__wrapper {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__author {
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_photo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: 20px;
+    }
+
+    &_photo01 {
+      background-image: url("../../images/author1.jpg");
+    }
+
+    &_photo02 {
+      background-image: url("../../images/author2.jpg");
+    }
+
+    &_photo03 {
+      background-image: url("../../images/author3.jpg");
+    }
+
+    &_name {
+      font-size: $fz-xSmall;
+      line-height: 22px;
+      padding: 5px 0;
+
+      @media screen and (min-width: $tablet-min) {
+        font-size: $fz-reg;
+      }
+    }
+
+    &_date {
+      color: $clr-lightBlue;
+      font-size: 10px;
+
+      @media screen and (min-width: $tablet-min) {
+        font-size: 14px;
+      }
+    }
+  }
+}

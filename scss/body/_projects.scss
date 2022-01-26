@@ -16,7 +16,7 @@
 .projects {
   margin: 100px auto;
   width: 100%;
-  height: 147vh;
+  height: 136vh;
   align-items: center;
   padding: 0 10px;
   display: flex;
@@ -28,42 +28,8 @@
   }
 
   &__title {
-    @include font_h2;
-    font-size: 24px;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    padding-top: 30px;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 100px;
-      height: 1px;
-      background-color: $clr-primary;
-      margin-bottom: 30px;
-      position: absolute;
-      left: 35%;
-      top: 0;
-      transition: all .5s ease-in-out;
+    @include titleBlock;
     }
-
-    @media screen and (min-width: $tablet-min) {
-      font-size: 36px;
-
-      &::before {
-        left: 42%;
-      }
-    }
-
-    @media screen and (min-width: $desktop) {
-      font-size: $fz-h2;
-
-      &::before {
-        left: 47%;
-      }
-    }
-  }
 
   &__first {
     @extend .project__block;
@@ -71,7 +37,7 @@
     @media screen and (min-width: $desktop) {
       width: 87%;
       position: absolute;
-      top: 9%;
+      top: 8%;
       left: 0;
     }
 
@@ -209,8 +175,8 @@
   }
 
   &_title {
-    @include font_h2;
-    font-size: 20px;
+    @include titleGeneral(20px);
+    padding: 10px;
 
     @media screen and (min-width: $tablet-min) {
       font-size: 26px;
@@ -223,24 +189,20 @@
   }
 
   &_text {
-    @include font_regularText;
-    padding: 5px;
-
-    @media screen and (min-width: $tablet-min) {
-      font-size: $fz-reg;
-      line-height: 30px;
-    }
+    @include regularText;
   }
 
   &_btn {
-    @include btn__main_small;
+    @include btnGeneral (10px);
     width: 45%;
     max-width: 190px;
     margin: 15px auto;
+    padding: 10px 25px;
 
     @media screen and (min-width: $tablet-min) {
-      @include btn__main_regular;
       width: 100%;
+      font-size: 14px;
+      padding: 16px 40px;
     }
 
     @media screen and (min-width: $desktop) {

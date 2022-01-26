@@ -40,7 +40,6 @@
 
   &__title {
     @include font_Xlarge;
-    font-size: 30px;
 
     @media screen and (min-width: $tablet-min) {
       font-size: 48px;

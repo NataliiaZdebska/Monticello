@@ -17,5 +17,16 @@ burgerMenu.onclick = () => {
     menuList.classList.toggle('list__open')
 }
 
+$(document).ready(function () {
+    let slider = $('.news__slider');
+    slider.slick( {
+        infinite: true,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '30px'
+    })
+})
 
 
