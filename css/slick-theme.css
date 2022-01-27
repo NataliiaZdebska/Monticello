@@ -67,7 +67,7 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 40px;
+    font-size: 20px;
     line-height: 1;
 
     opacity: .75;
@@ -216,6 +216,12 @@
     .slick-next {
         right: -75px;
     }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 40px;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {

@@ -26,8 +26,11 @@
 @mixin btnGeneral ($fontSize) {
   font-size: $fontSize;
   display: block;
+  max-width: 200px;
   line-height: 17px;
   border: 1px solid $clr-primary;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 @mixin titleBlock {
