@@ -1,18 +1,4 @@
 .socials {
-  padding: 5px 10px;
-  display: none;
-
-  @media screen and (min-width: $desktop) {
-    display: block;
-  }
-
-
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   &__item {
     display: block;
     width: 30px;
@@ -24,10 +10,8 @@
     transition: all 0.3s linear;
     position: relative;
 
-    @media screen and (min-width: $tablet-min) {
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
+    &:not(:last-child) {
+      margin-right: 20px;
     }
 
     @media screen and (min-width: $desktop) {

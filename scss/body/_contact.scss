@@ -12,14 +12,22 @@
 }
 
 .contact__block {
-  width: 49%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(53%, 35%);
-  padding: 60px 45px;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 40px 25px 5px;
   background-color: $clr-white;
-  z-index: 5;
+  z-index: 100;
+
+  @media screen and (min-width: $desktop) {
+    width: 49%;
+    max-width: 770px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(53%, 34%);
+    padding: 80px 45px 10px;
+  }
 
   &_title {
     @include titleBlock;
@@ -27,35 +35,61 @@
   }
 
   &_container {
+    margin: 50px auto;
     display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $desktop) {
+      margin: 0 auto;
+      flex-direction: row;
+    }
   }
 }
 
 .contacts {
+  position: relative;
+
   &__list {
-    width: 50%;
+    width: 100%;
     padding: 20px 10px;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      width: 50%;
+      text-align: left;
+      text-align: -moz-left;
+      text-align: -webkit-left;
+    }
 
     &_item {
       padding-bottom: 40px;
+      font-size: 14px;
 
       &::before {
         color: $clr-violet;
         margin-right: 10px;
       }
+
+      @media screen and (min-width: $tablet-min) {
+        font-size: $fz-reg;
+      }
     }
   }
 
   &__form {
-    width: 50%;
+    width: 100%;
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
 
+    @media screen and (min-width: $desktop) {
+      width: 50%;
+    }
+
     &_item {
       width: 100%;
       margin-bottom: 40px;
-      padding: 5px 0;
+      padding: 5px 10px;
       height: 40px;
       border: none;
       border-bottom: 1px solid $clr-inputBorder;
@@ -68,6 +102,21 @@
 
       &:focus {
         opacity: 1;
+      }
+    }
+
+    &_button {
+      @include btnGeneral(14px);
+      background-color: $clr-white;
+      padding: 12px 34px;
+      margin: 0 auto;
+      color: $clr-primary;
+
+      @media screen and (min-width: $desktop) {
+        font-size: $fz-reg;
+        position: absolute;
+        bottom: 20%;
+        right: 2%;
       }
     }
   }

@@ -3,7 +3,7 @@ $(document).ready(function () {
     slider.slick( {
         infinite: true,
         dots: true,
-        // autoplay: true,
+        autoplay: true,
         fade: true,
         arrows: false
     })
@@ -24,8 +24,7 @@ $(document).ready(function () {
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        // centerMode: true,
-        // centerPadding: '0px',
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 1600,

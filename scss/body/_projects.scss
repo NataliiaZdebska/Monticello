@@ -1,5 +1,6 @@
 .project__block {
-  margin: 20px auto;
+  width: 100%;
+  margin: 55px auto;
   padding: 20px 0;
 
   @media screen and (min-width: $tablet-min){
@@ -20,15 +21,9 @@
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: $tablet-min) {
-    height: 90vh;
-  }
-
   @media screen and (min-width: $desktop) {
-    margin: 100px auto;
-    position: relative;
+    margin: 100px auto 80px;
     padding: 0;
-    height: 136vh;
   }
 
   &__title {
@@ -37,18 +32,12 @@
 
   &__first {
     @extend .project__block;
-
-    @media screen and (min-width: $desktop) {
-      width: 87%;
-      position: absolute;
-      top: 8%;
-      left: 0;
-    }
+    position: relative;
 
     &_picture {
       @media screen and (min-width: $desktop) {
         position: relative;
-        width: 62%;
+        width: 53%;
         height: 100%;
       }
     }
@@ -79,29 +68,26 @@
 
     &_description {
       @media screen and (min-width: $desktop) {
-        position: absolute;
-        bottom: 7%;
-        right: 0;
         padding-left: 47px;
+        position: absolute;
+        bottom: 5%;
+        right: 12%;
       }
     }
   }
 
   &__second {
     @extend .project__block;
+    position: relative;
 
     @media screen and (min-width: $desktop) {
-      width: 87%;
       flex-direction: row-reverse;
-      position: absolute;
-      bottom: 0;
-      right: 0;
     }
 
     &_picture {
       @media screen and (min-width: $desktop) {
         position: relative;
-        width: 60%;
+        width: 53%;
         height: 100%;
       }
     }
@@ -131,10 +117,10 @@
 
     &_description {
       @media screen and (min-width: $desktop) {
+        padding-right: 47px;
         position: absolute;
-        bottom: 9%;
-        left: 0;
-        padding-right: 30px;
+        left: 12%;
+        bottom: 7%;
       }
     }
   }
@@ -162,8 +148,8 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: 37%;
     text-align: left;
+    width: 34%;
   }
 
   &_subtitle {
